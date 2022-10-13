@@ -5,6 +5,15 @@ athena:
   assumeRole: arn:aws:iam::774013277495:role/combine-harvester-athena-role
   assumeRoleSessionSeconds: 2700 #45 minutes
 
+iam-arn: arn:aws:iam::549050352176:role/bosun/notifications/notification-privacy-harvester
+
+cloud:
+  aws:
+    sqs:
+      region: eu-west-1
+    region:
+      static: eu-west-1
+
 custom:
   res-bucket-name: cert-roe-response-eu-west-1
   res-queue-name: cert-privacy-response
