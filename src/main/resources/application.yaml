@@ -1,0 +1,13 @@
+athena:
+  magpieRetentionStartDate: ${MAGPIE_RETENTION_START_DATE}
+  databaseName: ${ATHENA_DATABASE_NAME}
+  queryOutputLocation: s3://aws-athena-query-results-774013277495-us-east-1
+  assumeRole: arn:aws:iam::774013277495:role/combine-harvester-athena-role
+  assumeRoleSessionSeconds: 2700 #45 minutes
+
+custom:
+  res-bucket-name: cert-roe-response-eu-west-1
+  res-queue-name: cert-privacy-response
+  req-queue-name: cert-privacy-email-analytics-req
+  task-name: email-analytics-data
+  taskFileName: email-events
